@@ -1,0 +1,42 @@
+script_key="DFUoAXhCnnqWSzaOgDrIHvwJecrRehjP"; -- Your Premium Key here
+
+--Settings For Booths Sniper
+_G.ZapHubBoothsSniperSettings = {
+    MinimumGems = 0,
+    Items = {
+        {Item = "Royalty", MaxPrice = 4500000, Class = "Charm"},
+        {Item = "Overload", MaxPrice = 6000000, Class = "Charm"},
+        {Item = "Secret Key", MaxPrice = 20000, Class = "Misc"},
+        {Item = "Secret Key Upper Half", MaxPrice = 20000, Class = "Misc"},
+        {Item = "Cocktail", MaxPrice = 5000000, Class = "Potion", Tier = 2},
+        {Item = "Glitched Drive", MaxPrice = 20000000, Class = "Misc"},
+        {Item = "Rainbow Eggs", MaxPrice = 6000000000, Class = "Enchant"},
+        {Item = "Titanic Nutcracker Cat", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Snow Elf", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Ice Snake", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Ooze Cat", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Diamond Bunny", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Teacher Cat", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Loveserker", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Super Wolf", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Hydra Axolotl", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Nutcracker Squirrel", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Sea Dragon", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Easter Axolotl", MaxPrice = 8000000000, Class = "Pet"},
+        {Item = "Titanic Easter Cat", MaxPrice = 8000000000, Class = "Pet"},
+    },
+    Extras = {
+        TitanicPet = {Enabled = true, PercentageProfit = "1", MaxPrice = 8000000000},
+        HugePet = {Enabled = true, PercentageProfit = "10", MaxPrice = 11000000},
+        AnyItem = {Enabled = false, PercentageProfit = "100", MaxPrice = 1000000},
+    },
+    ServerHop = {
+        Enabled = true, -- true / false
+    },
+    Webhook = {
+        Enabled = true, -- true / false
+        WebhookURL = "https://discord.com/api/webhooks/1364470812220063796/ojYrvaHF9vDVaPfvGuFVC_CgZdbTwlf1KcTy7EST7j-7DDRMY41pal13wbOcYLyc2heT", -- Your Discord Webhook URL here.
+    },
+}
+
+loadstring(game:HttpGet("https://zaphub.xyz/ExecBoothSniper"))()
